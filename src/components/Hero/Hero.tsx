@@ -1,10 +1,14 @@
+import { HeroContainer } from "./hero.style"
+
 interface Props{
   children: JSX.Element | JSX.Element[]
 }
 
 function Hero({children}:Props) {
   return (
-    <div>{children}</div>
+    <HeroContainer>
+      {children}
+    </HeroContainer>
   )
 }
 

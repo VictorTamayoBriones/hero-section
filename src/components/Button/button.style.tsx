@@ -16,6 +16,7 @@ export const ButtonContainer = styled.button<Props>`
     font-size: 18px;
     border: none;
     gap: 10px;
+    cursor: pointer;
     svg{
         width: 24px;
         height: 24px;
