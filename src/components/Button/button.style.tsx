@@ -14,6 +14,8 @@ export const ButtonContainer = styled.button<Props>`
     justify-content: space-between;
     font-weight: 400;
     font-size: 18px;
+    border: none;
+    gap: 10px;
     svg{
         width: 24px;
         height: 24px;
