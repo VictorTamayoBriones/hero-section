@@ -1,4 +1,4 @@
-import { ArrowIcon } from "../../assets/icons/Icon/arrow-rigth"
+import { ArrowIcon } from "../../assets/icons/ArrowIcon/arrow-rigth"
 import { theme } from "../../theme"
 import { ButtonContainer } from "./button.style"
 
