@@ -1,7 +1,10 @@
+interface Props{
+  children: JSX.Element | JSX.Element[]
+}
 
-function Hero() {
+function Hero({children}:Props) {
   return (
-    <div>Hero</div>
+    <div>{children}</div>
   )
 }
 
