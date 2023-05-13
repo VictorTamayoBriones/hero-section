@@ -11,9 +11,9 @@ interface Props{
 function Button({ text, arrow_position, is_disable }:Props) {
   return (
     <ButtonContainer is_disable={is_disable} >
-        { arrow_position === 'left' &&  <ArrowIcon fillIcon={is_disable ? theme.white : theme.green} />}
-        { text && text }
-        { arrow_position === 'right' &&  <ArrowIcon fillIcon={is_disable ? theme.white : theme.green} />}
+      { arrow_position === 'left' &&  <ArrowIcon fillIcon={is_disable ? theme.white : theme.green} />}
+      { text && text }
+      { arrow_position === 'right' &&  <ArrowIcon fillIcon={is_disable ? theme.white : theme.green} />}
     </ButtonContainer>
   )
 }
