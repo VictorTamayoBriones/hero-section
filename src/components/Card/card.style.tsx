@@ -12,7 +12,11 @@ export const CardContainer = styled.article`
 export const CardHeader = styled.header`
     display: flex;    
     gap: 209px;
+    justify-content: space-between;
     .person-data{
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
         .image{
             width: 61px;
             height: 61px;
@@ -20,6 +24,7 @@ export const CardHeader = styled.header`
             overflow: hidden;
             img{
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
