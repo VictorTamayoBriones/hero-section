@@ -1,31 +1,44 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { ButtonActions, Cards, CarouselContainer } from "./carousel.style"
+import { ButtonActions, CarouselContainer } from "./carousel.style"
 import { dataCards } from './data/dataCards';
 import { Button, Card } from "..";
 import { register } from 'swiper/element';
-import { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
+
+declare global{
+    namespace JSX{
+        interface IntrinsicElements {
+            'swiper-container': React.DetailedHTMLProps<React.AllHTMLAttributes<any> | any,
+            any>;
+            
+        }
+        
+    }
+}
+declare global{
+    namespace JSX{
+        interface IntrinsicElements {
+            'swiper-slide': React.DetailedHTMLProps<React.AllHTMLAttributes<any> | any,
+            any>;
+            
+        }
+        
+    }
+}
+
+
 function Carousel() {
 
     const swiperContainer:any = useRef('')
 
     register()
 
-    useEffect(() => {
-        // listen for Swiper events using addEventListener
-        swiperContainer.current.addEventListener('progress', (e:any) => {
-          const [swiper, progress] = e.detail;
-          console.log(progress);
-        });
-    
-        swiperContainer.current.addEventListener('slidechange', (e:any) => {
-          console.log('slide changed');
-        });
-    }, []);
 
     return (
         <CarouselContainer>
