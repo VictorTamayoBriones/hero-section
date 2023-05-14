@@ -6,9 +6,6 @@ import { Button, Card } from "..";
 import { register } from 'swiper/element';
 import React, { useRef } from "react";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 
 declare global{

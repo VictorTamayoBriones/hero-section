@@ -1,10 +1,10 @@
 import Hero from "./components/Hero/Hero"
 import Footer from "./components/Hero/components/Footer/Footer"
 import MainInfo from "./components/Hero/components/MainInfo/MainInfo"
-import HeroImage from './assets/images/img-main.png';
 import Circles from "./assets/icons/Circles/Circles";
 import Square from "./assets/icons/Square/square";
 import { Carousel } from "./components/Carousel";
+import MainImage from "./components/Hero/components/MainImage/MainImage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       </div>
       <div className="right">
         <Circles/>
-        <img src={HeroImage} alt="hero-image" />
+        <MainImage/>
         <Square/>
         <Carousel/>
       </div>

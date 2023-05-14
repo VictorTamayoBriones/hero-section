@@ -4,11 +4,22 @@ export const CarouselContainer = styled.article`
     width: 576px;
     height: 275px;
     position: absolute;
+    
     bottom: 54px;
     z-index: 10;
+    animation: animationToEnter 1.5s ease-in ;
+
+    @keyframes animationToEnter {
+        0%{
+            transform: translateX(100vw);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
 `;
 
-export const CardsContainer = styled.div<any>`
+export const CardsContainer = styled.div`
     width: 520px;
     overflow: scroll;
     ::-webkit-scrollbar {

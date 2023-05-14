@@ -1,7 +1,10 @@
+import { MainImageContainer } from "./mainImage.style"
+import MainHeroImage from '../../../../assets/images/img-main.png'
+
 
 function MainImage() {
   return (
-    <div>MainImage</div>
+    <MainImageContainer src={MainHeroImage} />
   )
 }
 
