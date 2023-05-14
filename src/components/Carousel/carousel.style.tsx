@@ -29,4 +29,5 @@ export const ButtonActions = styled.div`
     position: absolute;
     bottom: -3px;
     right: -10px;
+    z-index: 11;
 `;
