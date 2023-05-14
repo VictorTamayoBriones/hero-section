@@ -4,10 +4,9 @@ export const CarouselContainer = styled.article`
     width: 576px;
     height: 275px;
     position: absolute;
-    
     bottom: 54px;
     z-index: 10;
-    animation: animationToEnter 1.5s ease-in ;
+    animation: animationToEnter 1.5s linear ;
 
     @keyframes animationToEnter {
         0%{
@@ -16,6 +15,11 @@ export const CarouselContainer = styled.article`
         100%{
             transform: translateX(0);
         }
+    }
+
+    @media (max-width: 1200px){
+        bottom: 3%;
+        left: -20%;
     }
 `;
 

@@ -10,8 +10,7 @@ export const CardContainer = styled.article`
 `;
 
 export const CardHeader = styled.header`
-    display: flex;    
-    gap: 209px;
+    display: flex;
     justify-content: space-between;
     .person-data{
         display: flex;

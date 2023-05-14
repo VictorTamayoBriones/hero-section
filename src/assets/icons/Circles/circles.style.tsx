@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const ContainerCircles = styled.div`
     position: absolute;
-    top: 40px;
-    left: 24px;
+    top: 8%;
+    left: 3%;
     z-index: 3;
-    animation: animationToFall 1.8s linear;
+    animation: animationToFall 1.3s linear;
     
     @keyframes animationToFall{
         0%{
@@ -14,5 +14,9 @@ export const ContainerCircles = styled.div`
         100%{
             top: 40px;
         }
+    }
+
+    @media (max-width:1800px){
+        left: -3%;
     }
 `;

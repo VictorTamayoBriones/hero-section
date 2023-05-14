@@ -6,7 +6,7 @@ export const MainImageContainer = styled.img`
     object-fit: contain;
     position: relative;
     z-index: 2;
-    animation: toBottom 1.5s ease-in;
+    animation: toBottom 1s linear;
 
 
     @keyframes toBottom {

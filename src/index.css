@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+:root{
+  --grey_dark: #303C51;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -12,4 +16,18 @@ body{
   height: 100vh;
   overflow: hidden;
   font-family: 'Inter', sans-serif ;
+}
+
+h1{
+  font-size: 5rem;
+  line-height: 5.6rem;
+  font-weight: 400;
+  color: var(--grey_dark);
+}
+
+@media (max-width: 1800px){
+  h1{
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
 }

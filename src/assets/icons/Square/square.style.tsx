@@ -4,7 +4,7 @@ export const SquareContainer = styled.div`
     position: absolute;
     bottom: -32px;
     right: 45px;
-    animation: animationToUp 1.5s ease-in-out;
+    animation: animationToUp 1.3s linear;
 
     @keyframes animationToUp {
         0%{
@@ -14,4 +14,9 @@ export const SquareContainer = styled.div`
             bottom: -32px;
         }
     }
+
+    @media (max-width:1200px){
+        right: -24px;
+    }
+
 `;
