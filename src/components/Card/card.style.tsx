@@ -55,6 +55,7 @@ export const CardHeader = styled.header`
 `;
 
 export const CardBody = styled.div`
+    margin-top: 24px;
     p{
         font-size: 14px;
         font-weight: 400;
