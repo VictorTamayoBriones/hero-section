@@ -32,11 +32,11 @@ export const HeroContainer = styled.div`
             &:nth-child(1){
                 position: absolute;
                 top: 40px;
-                left: 15px;
+                left: 24px;
                 z-index: 3;
             }
 
-            &:last-child{
+            &:nth-child(3){
                 position: absolute;
                 bottom: -24px;
                 right: 45px;

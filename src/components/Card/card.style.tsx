@@ -6,6 +6,7 @@ export const CardContainer = styled.article`
     height: 246px;
     padding: 24px;
     background: ${theme.card_bg};
+    backdrop-filter: blur(3px);
 `;
 
 export const CardHeader = styled.header`

@@ -4,6 +4,7 @@ import MainInfo from "./components/Hero/components/MainInfo/MainInfo"
 import HeroImage from './assets/images/img-main.png';
 import Circles from "./assets/icons/Circles/Circles";
 import Square from "./assets/icons/Square/square";
+import { Carousel } from "./components/Carousel";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Circles/>
         <img src={HeroImage} alt="hero-image" />
         <Square/>
+        <Carousel/>
       </div>
     </Hero>
   )

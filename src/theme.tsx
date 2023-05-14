@@ -1,7 +1,8 @@
 export const theme = {
-    card_bg: "#E9F1EE80",
+    card_bg: "rgba(233, 241, 238, 0.80)",
     yellow: "#FFE084",
     green: "#196046",
+    green_dark: "#15513b",
     green_light:"#469175",
     white:"#FFFFFF",
     grey_dark:"#303C51",
